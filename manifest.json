@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Memory Limiter",
+  "version": "1.0.0",
+  "description": "Unloads (discards) tabs that use more memory than the limit you set.",
+  "permissions": ["tabs", "storage", "alarms", "scripting", "processes"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "Tab Memory Limiter" }
+}

@@ -1,7 +1,7 @@
 // Periodically checks every tab's memory and discards tabs above the limit.
-const DEFAULT_LIMIT_MB = 500;
+const DEFAULT_LIMIT_MB = 777;
 const ALARM = 'check-memory';
-const PERIOD_MIN = 0.5; // 30s: minimum alarm period, keeps resource use low
+const PERIOD_MIN = 0.05; // 3s: minimum alarm period, keeps resource use low
 
 const MB = 1024 * 1024;
 

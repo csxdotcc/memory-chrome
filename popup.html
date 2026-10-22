@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+<style>body{font:13px sans-serif;width:240px;padding:10px}input{width:80px}</style>
+</head>
+<body>
+  <label>Max memory per tab (MB):<br>
+    <input id="limit" type="number" min="0" step="50"></label>
+  <button id="save">Save</button>
+  <p id="msg"></p>
+  <small>Tabs above this limit are unloaded. 0 disables. The active, pinned and audible tabs are never unloaded.</small>
+  <script src="popup.js"></script>
+</body>
+</html>

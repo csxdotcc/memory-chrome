@@ -6,9 +6,11 @@
 <body>
   <label>Max memory per tab (MB):<br>
     <input id="limit" type="number" min="0" step="50"></label>
+  <label>Max CPU per tab (%):<br>
+    <input id="cpu-limit" type="number" min="0" step="10"></label>
   <button id="save">Save</button>
   <p id="msg"></p>
-  <small>Tabs above this limit are unloaded. 0 disables. The active, pinned and audible tabs are never unloaded.</small>
+  <small>Tabs above either limit are unloaded. 0 disables that limit. Active, pinned and audible tabs are considered, but Chrome does not allow the active tab to be discarded.</small>
   <script src="popup.js"></script>
 </body>
 </html>
